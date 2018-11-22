@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intelligent Data Management</title>
+  <link rel="icon" type="jpeg" href="veeam_logo.jpeg">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,700,700i,800" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <section class="container">
+      <img src="veeam_logo_lp.svg" alt="Veeam Logo" class="veeam_logo">
+      <img src="slogan_lp.svg" alt="Slogan Veeam" class="slogan">
+    </section>
+    <div class="dropdown" style="float:right;top:4%;z-index:1;">
+      <button class="dropbtn"><img src="menu.png"></button>
+      <nav class="dropdown-content">
+        <a href="#">Description</a>
+        <a href="#">Speakers</a>
+        <a href="#">Register</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="image">
+    <picture>
+      <source media="(max-width:578px)" srcset="Team_mobile_gradient.png">
+      <source media="(max-width:950px)" srcset="Team_tablet_gradient.png">
+      <img src="Team_gradient.png" alt="Veeam" style="width:100%;">
+    </picture>
+    <div class="container">
+      <h2 class="text1_banner">LIVE WEBINAR</h2>
+      <h2 class="text2_banner">Veeam Virtual Labs: Beginner to Advanced</h2>
+    </div>
+    <img src="calendar.png" alt="Calendar" class="date">
+    <h2 class="text_date">Thursday, June 22  |  12 p.m. CET / 11:00 a.m. GMT</h2>
+    <div class="description">
+      <p>The Veeam Virtual Lab has come a long way over the years. Whether it is the ability to go
+      into production changes with complete confidence, testing upgrades of multi-tiered applications or security
+      testing without risk, the virtual lab is the right tool for the job!</p>
+      <p>Join this webinar and learn some expert tips and use cases for using the virtual lab for backups,
+        replicas and storage snapshots to get the highest levels of Availability.</p>
+      <br>
+      <img src="line.png" alt="line.png" class="line">
+    </div>
+    <h1 class="speakers">Featured speakers:</h1>
+    <div>
+      <img src="speaker1.png" alt="Stefan Renner" class="speaker1_img">
+      <pre class="speaker1_text"><b>Stefan Renner</b>
+EMEA Alliance Systems Engineer,
+Veeam Software</pre>
+    </div>
+    <div>
+      <img src="speaker2.png" alt="Oliver Hansel" class="speaker2_img">
+      <pre class="speaker2_text"><b>Oliver Hansel</b>
+Solution Architect,
+NetApp </pre>
+    </div>
+
+  <form class="form_rectangle" action="thank.html" onsubmit="myFunction()">
+    <legend class="title_form">Register to attend</legend>
+    <input type="text" name="first_name" class="first_mane_rectangle" placeholder="First name*" maxlength="40" minlength="3" required>
+    <input type="text" name="last_name" class="last_mane_rectangle" placeholder="Last name*" maxlength="80" minlength="3" required>
+    <input type="email" name="business_email" class="business_email_rectangle" placeholder="Business email*" pattern=".+.com" maxlength="80" required>
+    <select required aria-required="true" name="country" class="country_select_rectangle" id="select1">
+      <option value="" hidden>Country*</option>
+      <option value="Russia" id="russia">Russia</option>
+      <option value="USA" id="usa">USA</option>
+      <option value="Romania" id="romania">Romania</option>
+      <option value="Brazil" id="brazil">Brazil</option>
+      <option value="UK" id="uk">UK</option>
+    </select>
+    <button type="submit" class="button">REGISTER NOW</button>
+    <button type="submit" class="button_1">REGISTER NOW</button>
+    <select name="state" class="state_select_rectangle" id="select2" style="display:none">
+      <option value="" hidden>State*</option>
+      <option value="New York">New York</option>
+      <option value="Alaska">Alaska</option>
+      <option value="Florida">Florida</option>
+      <option value="Massachusetts">Massachusetts</option>
+      <option value="California">California</option>
+    </select>
+  </form>
+
+  <footer class="footer_rectangle">
+    <p class="text_footer">&copy; 2018 Veeam<sup>&reg;</sup> Software. Privacy Policy &amp; Cookies</p>
+  </footer>
+
+</section>
+
+<script type="text/javascript">
+function myFunction() {
+  alert("The form was submitted");
+}
+</script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+
+
+</body>
+</html>
